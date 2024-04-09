@@ -5,6 +5,10 @@
 			</li>
 			<li class="nav-item"><a class="nav-link" href="saisie.do">Saisie</a>
 			</li>
+			<li class="nav-item active"><a class="nav-link"
+				href="types">Types</a></li>
+			<li class="nav-item"><a class="nav-link" href="saisieType">Saisie
+					Type</a></li>
 		</ul>
 	</div>
 </nav>

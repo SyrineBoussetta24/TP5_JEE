@@ -26,6 +26,13 @@
 						<label class="control-label">Prix :</label> <input type="text"
 							name="prix" class="form-control" />
 					</div>
+					<div class="form-group">
+						<select name="type" class="form-control">
+							<c:forEach items="${typModel.types}" var="typ">
+								<option value="${typ.idTyp}">${typ.nomTyp}</option>
+							</c:forEach>
+						</select>
+					</div>
 					<div>
 						<button type="submit" class="btn btn-primary">Ajouter</button>
 					</div>

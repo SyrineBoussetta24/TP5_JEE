@@ -5,6 +5,7 @@ xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence
 http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
 <persistence-unit name="TP5">
 	<class>metier.entities.Instrument</class>
+	<class>metier.entities.Type</class>
 <properties>
 <property name="javax.persistence.jdbc.url"
 value="jdbc:mysql://localhost:3306/DB_MVC_INSTRUMENT"/>

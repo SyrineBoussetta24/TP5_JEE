@@ -7,6 +7,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 
@@ -22,6 +24,23 @@ public class Instrument implements Serializable {
 	@Column (name="NOM_INSTRUMENT")
 	private String nomInstrument;
 	private double prix;
+	
+	  @ManyToOne
+	private Type type;
+	public Instrument(String nomInstrument, double prix, Type type) {
+		super();
+		this.nomInstrument = nomInstrument;
+		this.prix = prix;
+		this.type = type;
+	}
+
+	public Type getType() {
+		return type;
+	}
+
+	public void setType(Type type) {
+		this.type = type;
+	}
 
 	public Instrument() {
 		super();
